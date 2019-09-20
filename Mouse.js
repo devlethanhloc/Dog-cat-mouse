@@ -1,10 +1,14 @@
 function Mouse(name){
     this.name = name;
-    this.dead = false;
+    this.isDead = false;
 }
 
 Mouse.prototype.die = function(){
-    this.dead = true;
+    this.isDead = true;
+};
+
+Mouse.prototype.run = function() {
+    console.log('Run..');
 };
 
 module.exports = Mouse;
